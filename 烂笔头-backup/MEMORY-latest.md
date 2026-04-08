@@ -27,7 +27,8 @@
 
 ### GitHub 信息
 - 仓库地址：https://github.com/fushiq-rgb/Skills-group
-- PAT 凭证：{{GITHUB_PAT}}（凭证已脱敏备份，本地有效）
+- PAT 凭证：${GITHUB_PAT}
+- 凭证位置：/workspace/credentials/github.md（已验证，可正常使用）
 - 用途：按指令执行技能下载/上传
 
 ### 合作协议（v1.0，2026-04-03 确认）
@@ -44,6 +45,13 @@
 - Q1：不包括自主判断范围（例行日志写入Wiki须等指令）
 - Q2：交付标准为 B（✅结果+偏差说明）
 - Q3：详细内容→飞书Wiki，微信→一行摘要
+
+### 重要教训（2026-04-07，铁律级）
+**GitHub PAT 必须写入 MEMORY.md：**
+- 凭证真实值已记录于 /workspace/credentials/github.md
+- MEMORY.md 中不得使用占位符 `{{GITHUB_PAT}}`，必须填入真实 PAT
+- 技能上传/下载前必须先读取 credentials/github.md，勿假设 MEMORY.md 中已有真实值
+- 每次 git push 前确认 remote URL 包含真实 PAT（不使用占位符）
 
 ### 运行环境约束（已确认，绝对禁止违反）
 
@@ -98,3 +106,18 @@
 - skill-vetter: https://clawhub.ai/spclaudehome/skill-vetter
 - proactive-agent: npx clawhub@latest install proactive-agent
 - ontology: npx clawhub@latest install ontology
+- wecom-doc-manager: 企业微信文档管理技能（已安装，位于 ~/.openclaw/extensions/wecom-openclaw-plugin/skills/wecom-doc-manager/SKILL.md）
+
+### 飞书Wiki 已创建文档（2026-04-06）
+- 请假审批流程图：https://feishu.cn/docx/EJrQdxAv3oB6GuxLizocCWplnNc（doc_token: EJrQdxAv3oB6GuxLizocCWplnNc）
+
+### 微信渠道配置
+- ilink_bot_id: 3768f1ae5b39@im.bot（连接状态需定期确认）
+
+### 重要教训（2026-04-06，铁律级）
+**不查记忆就行动是严重违规：**
+- MEMORY.md 中已记录 Wiki Space ID、token、权限配置，每次执行飞书操作前必须先读取记忆
+- 不得在已有所属权限配置的情况下反复要求用户重复授权
+- 不得未经记忆查询就调用工具，造成重复确认，浪费用户时间
+- 执行流程：收到任务 → 先查 MEMORY.md → 再执行
+- 附：飞书操作不属"绿区直接执行"，需先确认工具是否有权访问（先查记忆中的配置）
