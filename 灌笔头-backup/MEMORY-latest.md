@@ -27,7 +27,7 @@
 
 ### GitHub 信息
 - 仓库地址：https://github.com/fushiq-rgb/Skills-group
-- PAT 凭证：YOUR_GITHUB_PAT
+- PAT 凭证：[GITHUB_PAT_REDACTED]
 - 凭证位置：/workspace/credentials/github.md（已验证，可正常使用）
 - 用途：按指令执行技能下载/上传
 
