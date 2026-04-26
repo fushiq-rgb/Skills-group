@@ -1,10 +1,11 @@
 {
   "lastChecks": {
-    "cron": 1776469440,
+    "cron": 1745400600,
     "email": null,
     "calendar": null,
     "weather": null
   },
-  "today": "2026-04-18",
-  "lastHeartbeat": 1776469440
+  "today": "2026-04-24",
+  "lastHeartbeat": 1745400600,
+  "alerts": {}
 }
