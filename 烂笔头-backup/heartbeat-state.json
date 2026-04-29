@@ -1,11 +1,16 @@
 {
   "lastChecks": {
-    "cron": 1745400600,
+    "cron": 1745765700,
     "email": null,
     "calendar": null,
     "weather": null
   },
-  "today": "2026-04-24",
-  "lastHeartbeat": 1745400600,
-  "alerts": {}
+  "today": "2026-04-27",
+  "lastHeartbeat": 1745767320,
+  "alerts": {
+    "weekly-review-timeout": {
+      "detected": "2026-04-27T12:35:00Z",
+      "detail": "Cron 64dd068c 每周复盘（周一）lastRunStatus=error, lastError=LLM request timed out, consecutiveErrors=1"
+    }
+  }
 }
